@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "LKUP_SQLTABLE_WATERMARK_DW",
+				"name": "LKUP_SQLTABLE_WATERMARK",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -36,7 +36,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "LKUP_SQLTABLE_WATERMARK_DW",
+						"activity": "LKUP_SQLTABLE_WATERMARK",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -45,9 +45,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('LKUP_SQLTABLE_WATERMARK_DW').output.value",
+						"value": "@activity('LKUP_SQLTABLE_WATERMARK').output.value",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"activities": [
 						{
 							"name": "EXEC_SQL_INCREMENTAL_PIPELINE",
