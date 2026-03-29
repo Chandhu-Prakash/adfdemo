@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevdemodata27"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"LS_Parent_SqlServer_DW_password": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adlsdevbulkload27.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://adlsdevbulkload27.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://keyvaultprojectdemodata.vault.azure.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "azuresqldatabase2712.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "testdata"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "admindata"
+		},
+		"LS_Parent_SqlServer_DW_properties_typeProperties_server": {
+			"value": "CHANDHU\\SQLEXPRESS"
+		},
+		"LS_Parent_SqlServer_DW_properties_typeProperties_database": {
+			"value": "visionboard"
+		},
+		"LS_Parent_SqlServer_DW_properties_typeProperties_userName": {
+			"value": "admin"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "CHANDHU\\SQLEXPRESS"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "visionboard"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "admin"
+		}
+	}
+}
